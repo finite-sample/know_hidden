@@ -81,3 +81,7 @@ The manuscript needs XeLaTeX and latexmk. Every number in the text comes from
 Plot and table defaults live in `00_config.R`. The manuscript applies the generated `\TableStyle` to each table. Reusable functions stay in the named `R/` modules so tests can call them directly.
 
 `R/01_extract_public_polls.R` rebuilds the survey extracts from the original ANES and NAES files; its header gives the command and required inputs. It is not loaded by the public analysis or tests. The public pipeline uses the committed NAES summaries when the restricted microdata are absent and writes the selected summaries to `tabs/naes_probe.csv`. With the restricted extracts available locally, it recomputes those summaries. Neither path overwrites the source documentation. The two NAES microdata tests are skipped when those files are absent.
+
+<!-- adjacent:start -->
+
+<!-- adjacent:end -->
