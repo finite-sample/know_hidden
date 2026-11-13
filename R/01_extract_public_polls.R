@@ -93,7 +93,7 @@ naes04 <- load_one(file.path(old_repo, "data", "naes", "naes04.rdata")) |>
     ccb31_4 = .data$ccb31_4, ccb31_5 = .data$ccb31_5, ccb32 = .data$repdk
   )
 
-# The old NAES 2008 file stores labelled factors; codes are restored from the NAES08-Phone codebook.
+# The old NAES 2008 file stores labeled factors; codes are restored from the NAES08-Phone codebook.
 # CBb06rB (Edwards) and CBb06rC (Obama) are absent from that file (two CBb04 columns sit in their place), so CBb06
 # cannot be scored.
 probe_code <- function(x) {
